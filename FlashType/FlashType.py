@@ -28,7 +28,7 @@ class Game:
 
         pygame.init()
        # self.open_img = pygame.image.load('car.jpeg')
-        self.open_img = pygame.transform.scale(self.open_img, (self.w,self.h))
+        #self.open_img = pygame.transform.scale(self.open_img, (self.w,self.h))
 
 
         self.bg = pygame.image.load('background.jpg')
@@ -135,7 +135,7 @@ class Game:
         clock.tick(60)
 
     def reset_game(self):
-        self.screen.blit(self.open_img, (0,0))
+       # self.screen.blit(self.open_img, (0,0))
 
         pygame.display.update()
         time.sleep(1)
