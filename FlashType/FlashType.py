@@ -27,12 +27,12 @@ class Game:
 
 
         pygame.init()
-        self.open_img = pygame.image.load('car.jpeg')
-        self.open_img = pygame.transform.scale(self.open_img, (self.w,self.h))
+        #self.open_img = pygame.image.load('car.jpeg')
+        #self.open_img = pygame.transform.scale(self.open_img, (self.w,self.h))
 
 
-        self.bg = pygame.image.load('background.jpg')
-        self.bg = pygame.transform.scale(self.bg, (500,750))
+        #self.bg = pygame.image.load('background.jpg')
+        #self.bg = pygame.transform.scale(self.bg, (500,750))
 
         self.screen = pygame.display.set_mode((self.w,self.h))
         pygame.display.set_caption('Type Speed test')
@@ -74,8 +74,8 @@ class Game:
             self.results = 'Time:'+str(round(self.total_time)) +" secs   Accuracy:"+ str(round(self.accuracy)) + "%" + '   Wpm: ' + str(round(self.wpm))
 
             # draw icon image
-            self.time_img = pygame.image.load('icon.png')
-            self.time_img = pygame.transform.scale(self.time_img, (150,150))
+            #self.time_img = pygame.image.load('icon.png')
+            #self.time_img = pygame.transform.scale(self.time_img, (150,150))
             #screen.blit(self.time_img, (80,320))
             screen.blit(self.time_img, (self.w/2-75,self.h-140))
             self.draw_text(screen,"Reset", self.h - 70, 26, (100,100,100))
@@ -135,7 +135,7 @@ class Game:
         clock.tick(60)
 
     def reset_game(self):
-        self.screen.blit(self.open_img, (0,0))
+        #self.screen.blit(self.open_img, (0,0))
 
         pygame.display.update()
         time.sleep(1)
