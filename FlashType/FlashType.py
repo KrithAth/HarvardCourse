@@ -31,7 +31,7 @@ class Game:
         self.open_img = pygame.transform.scale(self.open_img, (self.w,self.h))
 
 
-        self.bg = pygame.image.load('background.jpg')
+        self.bg = pygame.image.load('background.avif')
         self.bg = pygame.transform.scale(self.bg, (500,750))
 
         self.screen = pygame.display.set_mode((self.w,self.h))
